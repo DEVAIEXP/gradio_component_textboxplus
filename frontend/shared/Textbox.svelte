@@ -611,7 +611,7 @@
         user-select: none;		
     }
    .tooltip-text {		
-		width: 300px;
+		width: auto;
 		background-color: var(--body-text-color);
 		color: var(--background-fill-primary);
 		text-align: center;

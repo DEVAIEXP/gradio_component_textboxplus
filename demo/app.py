@@ -29,7 +29,7 @@ with gr.Blocks(theme=gr.themes.Ocean(), title="TextboxPlus Demo") as demo:
         label="Your Name",
         info="Please enter your full name.",
         # The key feature: the help text for the tooltip.
-        help="Hover over the (?) icon to see this help message, This provides brief, contextual guidance for the user.",
+        help="Hover over the", # (?) icon to see this help message, This provides brief, contextual guidance for the user.",
         placeholder="e.g., Jane Doe",
         interactive=True,
         elem_id="textboxplus-input",

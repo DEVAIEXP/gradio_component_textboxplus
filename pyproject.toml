@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gradio_textboxplus"
-version = "0.0.1"
+version = "0.0.3"
 description = "Advanced Textbox Component for Gradio UI"
 readme = "README.md"
 license = "apache-2.0"

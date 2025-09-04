@@ -9,7 +9,7 @@ abs_path = os.path.join(os.path.dirname(__file__), "css.css")
 
 with gr.Blocks(
     css=abs_path,
-    theme=gr.themes.Default(
+    theme=gr.themes.Ocean(
         font_mono=[
             gr.themes.GoogleFont("Inconsolata"),
             "monospace",
@@ -62,24 +62,14 @@ with gr.Blocks(theme=gr.themes.Ocean(), title="TextboxPlus Demo") as demo:
         highlighting the new `help` tooltip feature.
         \"\"\"
     )
-    with gr.Sidebar():
-        input_box_2 = TextboxPlus(
-        label="Your Name",
-        info="Please enter your full name.",
-        # The key feature: the help text for the tooltip.
-        help="Hover over the (?) icon to see this help message, This provides brief, contextual guidance for the user.",
-        placeholder="e.g., Jane Doe",
-        interactive=True,
-        elem_id="textboxplus-input",
-    )
-
+   
     # --- Interactive Textbox with Help Tooltip ---
     # This is the main component being demonstrated.
     input_box = TextboxPlus(
         label="Your Name",
         info="Please enter your full name.",
         # The key feature: the help text for the tooltip.
-        help="Hover over the (?) icon to see this help message, This provides brief, contextual guidance for the user.",
+        help="Hover over the", # (?) icon to see this help message, This provides brief, contextual guidance for the user.",
         placeholder="e.g., Jane Doe",
         interactive=True,
         elem_id="textboxplus-input",
