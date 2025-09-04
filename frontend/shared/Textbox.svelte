@@ -612,6 +612,7 @@
     }
    .tooltip-text {		
 		width: auto;
+		max-width: 500px;
 		background-color: var(--body-text-color);
 		color: var(--background-fill-primary);
 		text-align: center;
