@@ -10,9 +10,10 @@ app_file: space.py
 ---
 
 # `gradio_textboxplus`
-<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.1%20-%20orange">  
+<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.2%20-%20blue"> <a href="https://huggingface.co/spaces/elismasilva/gradio_textboxplus"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue"></a><p><span>💻 <a href='https://github.com/DEVAIEXP/gradio_component_textboxplus'>Component GitHub Code</a></span></p>
 
-Advanced Textbox Component for Gradio UI
+
+Advanced Textbox Component for Gradio UI with tooltip help support.
 
 ## Installation
 
@@ -46,6 +47,16 @@ with gr.Blocks(theme=gr.themes.Ocean(), title="TextboxPlus Demo") as demo:
         This is a simple demonstration of the `TextboxPlus` custom component,
         highlighting the new `help` tooltip feature.
         """
+    )
+    with gr.Sidebar():
+        input_box_2 = TextboxPlus(
+        label="Your Name",
+        info="Please enter your full name.",
+        # The key feature: the help text for the tooltip.
+        help="Hover over the (?) icon to see this help message, This provides brief, contextual guidance for the user.",
+        placeholder="e.g., Jane Doe",
+        interactive=True,
+        elem_id="textboxplus-input",
     )
 
     # --- Interactive Textbox with Help Tooltip ---

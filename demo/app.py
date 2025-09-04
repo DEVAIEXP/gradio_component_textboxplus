@@ -22,7 +22,7 @@ with gr.Blocks(theme=gr.themes.Ocean(), title="TextboxPlus Demo") as demo:
         highlighting the new `help` tooltip feature.
         """
     )
-
+   
     # --- Interactive Textbox with Help Tooltip ---
     # This is the main component being demonstrated.
     input_box = TextboxPlus(
